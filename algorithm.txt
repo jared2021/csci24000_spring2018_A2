@@ -1,1 +1,6 @@
-
+First I will need to code the advanceTortoise, advanceHare, and printPosition
+The advancedTortoise function and advanceHare function will roll a dice and depending on what is rolled will determine how far the Tortoise and Hare will move
+The print function will print a T and H to show where the two players are positioned
+The main function will call these three functions and will continue to run until the Tortoise or the Hare reach the finish line
+The main function will also check to see whether the Tortoise or the Hare has reached the finish line as well as whether the Tortoise and the Hare occupy the same space and if they do the Tortoise will give up his position and move back a space
+When either the Tortoise or the Hare has finished the race the main function will tell the user who won the race and the main function will end.
