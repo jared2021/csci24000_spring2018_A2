@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <ctime>
-
+#include <iomanip>
 #define RACE_LENGTH 50
 
 void advanceTortoise(int* ptrTortoise);
@@ -30,7 +30,7 @@ int main()
 				*ptrHare=*ptrHare-2;
 			}
 			if (randH=9,10){
-				*ptrHare=*ptrHare=3;
+				*ptrHare=*ptrHare-3;
 			}
 		}
 //advanceHare function ends here
@@ -67,11 +67,23 @@ int main()
 		}
 		if (*ptrHare=*ptrTortoise){
 			*ptrTortoise=*ptrTortoise-1;
-//if statements ends
-		printPosition(ptrHare,ptrTortoise);{
-				
-			}
 		}
-
-}
+//if statements ends
+//printPosition function starts
+		printPosition(ptrHare,ptrTortoise);{
+			std::cout <<std::setw(RACE_LENGTH)<<std::left;
+			std::cout <<std::left<<(*ptrHare)<<'H';
+			std::cout <<std::left<<(*ptrTortoise)<<'T';
+			}
+//printPosition function ends		
+	}
+	if (*ptrHare=50){
+		std::cout<<"The Hare won the race.";
+	}
+	if (*ptrTortoise=50){
+		std::cout<<"The Tortoise won the race.";
+	}
+	else{
+		std::cout<<"One eternity later...no one made it to the finsih line.";
+	}
 }
