@@ -1,6 +1,8 @@
-First I will need to code the advanceTortoise, advanceHare, and printPosition
-The advancedTortoise function and advanceHare function will roll a dice and depending on what is rolled will determine how far the Tortoise and Hare will move
-The print function will print a T and H to show where the two players are positioned
-The main function will call these three functions and will continue to run until the Tortoise or the Hare reach the finish line
-The main function will also check to see whether the Tortoise or the Hare has reached the finish line as well as whether the Tortoise and the Hare occupy the same space and if they do the Tortoise will give up his position and move back a space
-When either the Tortoise or the Hare has finished the race the main function will tell the user who won the race and the main function will end.
+the goal of this assignment is to create a simulation of the race between the Tortoise and the Hare
+the program will do this through the use of a while loop and advance functions for both the Tortoise and the Hare through the use of a random number generator to act as a probability gage
+it will determine how far forward, backward, or if they will move at all through if statements
+it will print out the positions of the Tortoise and the Hare through setw functions which will print a T or H a certain amount of spaces depening on where they are.
+This will be determined through calculating the distance from the beginning of the race to the person in last the distance between first and last and the distance between first and the finish.
+the user will not have to input anything
+the output will be a T and a H and a | to represent the end of the race and a bunch of spaces imbetween
+
