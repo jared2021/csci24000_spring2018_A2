@@ -10,7 +10,7 @@ void printPosition(int* ptrTortoise, int* ptrHare);
 
 int main()
 {srand(time(NULL));	
- int H=0;
+ int H=0;//these variables are going to be used just to give my ptrHare and ptrTortoise variables the value 0
  int T=0;
  int* ptrHare=&H;
  int* ptrTortoise=&T;
@@ -51,7 +51,7 @@ int main()
 //main function ends
  void advanceHare(int* ptrHare){
 //advanceHare function
-			int randH;
+			int randH;//variable used to store the random number generated for the probabililty of the dice rolling and to compare what it is to see how ptrHare is affected
 			randH=rand()%10+1;
 			if (randH<4){
 				*ptrHare=*ptrHare+2;
@@ -72,7 +72,7 @@ int main()
 //advanceHare function ends here
 void advanceTortoise(int* ptrTortoise ){
 //advanceTortoise function
-			int randT;
+			int randT;//randT is a variable used to hold the random number generated to be used for the probability of rolling the dice and to compare that number to see what ptrTortoise gets
 			randT=rand()%10+1;
 			if (randT<7){
 				*ptrTortoise=*ptrTortoise+1;
@@ -90,6 +90,7 @@ void advanceTortoise(int* ptrTortoise ){
 //advanceTortoise function ends here
 //printPosition function starts
 void printPosition(int* ptrHare,int* ptrTortoise){
+	//printPosition function will see whether ptrHare or ptrTortoise is bigger to determine how it should print out the places of the Tortoise and the Hare
 	if(*ptrHare>*ptrTortoise){
 		std::cout<<std::setw(*ptrTortoise)<<'T';
 		std::cout<<std::setw(*ptrHare-*ptrTortoise)<<'H';
